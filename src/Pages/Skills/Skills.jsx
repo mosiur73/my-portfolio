@@ -1,4 +1,5 @@
 import React from 'react';
+import { Slide, Zoom } from 'react-awesome-reveal';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaNodeJs } from "react-icons/fa";
 import { SiTailwindcss, SiMongodb, SiFirebase, SiExpress } from "react-icons/si";
 
@@ -23,6 +24,7 @@ const Skills = () => {
                 <div className='divider'></div>
 
                 {/* Skill Cards */}
+                <Slide>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                     {skills.map((skill, index) => (
                         <div key={index} className="bg-indigo-100 p-6 rounded-xl shadow-md flex flex-col justify-center items-center text-center">
@@ -31,6 +33,7 @@ const Skills = () => {
                         </div>
                     ))}
                 </div>
+                </Slide>
             </div>
         </section>
     );

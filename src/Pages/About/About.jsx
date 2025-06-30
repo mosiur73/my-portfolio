@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import { Zoom } from 'react-awesome-reveal';
 
 const About = () => {
   return (
@@ -11,8 +12,8 @@ const About = () => {
         About Me
       </h2>
       <div className="divider"></div>
-
-      <div className="flex flex-col items-center text-center max-w-2xl mx-auto bg-white/70 backdrop-blur-sm p-6 rounded-md">
+         <Zoom>
+           <div className="flex flex-col items-center text-center max-w-2xl mx-auto bg-white/70 backdrop-blur-sm p-6 rounded-md">
         <p className="text-lg text-gray-700 mb-4">
           Hi, I'm <span className="text-red-500 font-bold">Mosiur Rahman</span>, a passionate{' '}
           <span className="text-red-500 font-bold">Frontend Developer</span> dedicated to crafting stunning and functional web experiences.
@@ -24,6 +25,8 @@ const About = () => {
           Coding has been my passion since my fourth semester. Beyond coding, I enjoy exploring new technologies and reading books in my spare time.
         </p>
       </div>
+      </Zoom>
+ 
     </section>
   );
 };

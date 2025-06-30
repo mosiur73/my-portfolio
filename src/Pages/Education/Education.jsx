@@ -1,4 +1,5 @@
 import React from 'react';
+import { Slide } from 'react-awesome-reveal';
 
 const Education = () => {
     return (
@@ -8,6 +9,7 @@ const Education = () => {
            <h2 className="text-4xl text-center font-bold text-gray-800 mb-3">Education</h2>
            <div className='divider '></div>
            </div>
+            <Slide direction="right" cascade damping={0.1} triggerOnce>
            <div className="max-w-screen-sm mx-auto bg-white rounded-lg shadow-lg p-8 my-6"> {/* Card styling */}
       <div className="flex flex-col items-center">
         <div className="mb-6">
@@ -26,7 +28,7 @@ const Education = () => {
         </div>
       </div>
     </div>
-       
+      </Slide>
     </section> 
      
     );

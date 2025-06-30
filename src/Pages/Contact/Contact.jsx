@@ -1,5 +1,6 @@
 import emailjs from '@emailjs/browser';
 import React, { useRef } from 'react';
+import { Slide } from 'react-awesome-reveal';
 import toast from 'react-hot-toast';
 
 const Contact = () => {
@@ -29,6 +30,7 @@ const Contact = () => {
       <h1 className='text-4xl text-center font-bold text-black '>Contact me</h1>
       <div className='divider'></div>
       <div className="grid grid-cols-1 lg:grid-cols-2 my-8 bg-gray-100 gap-16 mx-auto items-center justify-center">
+         <Slide direction="left" cascade damping={0.1} triggerOnce>
         <form ref={form} onSubmit={sendEmail} className=" p-8 bg-white rounded-lg shadow-lg">
           <div className='flex gap-4'>
             <div className="">
@@ -81,6 +83,8 @@ const Contact = () => {
             Submit
           </button>
         </form>
+        </Slide>
+          <Slide direction="left" distance="300px" damping={0.1}>
         <div className='w-96 h-[350px] rounded-2xl bg-slate-200 flex justify-center items-center '>
           <div className="flex flex-col justify-center my-28 text-center text-black"> 
             <h2 className="text-2xl font-bold mb-2">Location: Nachol, Chapai Nawabganj</h2> 
@@ -88,6 +92,7 @@ const Contact = () => {
             <h2 className="text-xl">Contact: +8801782442249</h2> 
           </div>
         </div>
+        </Slide>
       </div>
     </div>
   );

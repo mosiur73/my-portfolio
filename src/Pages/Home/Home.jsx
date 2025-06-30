@@ -7,9 +7,12 @@ import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
 
 
+
+
 const Home = () => {
     return (
         <div className='w-full' >
+          
            <Banner></Banner>
            <About></About>
            <Skills></Skills>
